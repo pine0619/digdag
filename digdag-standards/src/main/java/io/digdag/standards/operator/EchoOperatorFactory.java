@@ -43,9 +43,10 @@ public class EchoOperatorFactory
         @Override
         public TaskResult run()
         {
+
             Config params = request.getConfig();
 
-            String message = params.get("_command", String.class);
+            String message = "YY test:" + params.get("_command", String.class);
 
             System.out.println(message);
 
